@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tá Coxa! | Calculadora de notas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles1.css">
+  </head>
+<body>
+  <header>
+    <div class="faixa">
+      <div class="container">
+        <div class="jumbotron">
+          <div class="header col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="col-md-12 logo">
+              <a href="index.html"><img src="img/SiteLogo.png"></img></a>
+            </div>
+            <h3 class="text-muted">Descubra quanto você precisa na P3!</h3>
+          </div>
+          <p>Preencha com as notas e os pesos das avaliações.</p>
+          <form id="formulario">
+            
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="input-group col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left ">
+                <span class="input-group-addon">Nota P1</span>
+                <input type="text" name="nota1" class="entrada-form" placeholder="0 a 10" aria-describedby="sizing-addon1">
+              </div>
+              <div class="input-group col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+                <span class="input-group-addon">Peso P1</span>
+                <input type="text"  name="peso1" class="entrada-form" aria-describedby="sizing-addon1">
+              </div>
+            </div> <!--Linha 1-->
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <div class="input-group col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                <span class="input-group-addon">Nota P2 </span>
+                <input type="text" name="nota2" class="entrada-form" placeholder="0 a 10" aria-describedby="sizing-addon1">
+              </div>
+              <div class="input-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <span class="input-group-addon">Peso P2</span>
+                <input type="text"  name="peso2" class="entrada-form" aria-describedby="sizing-addon1">
+              </div>
+            </div><!--Linha 2-->
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <div class="input-group col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                <span class="input-group-addon">Média pretendida</span>
+                <input type="text" name="nota2" class="entrada-form" id="m-pretendida" placeholder="0 a 10" aria-describedby="sizing-addon1">
+              </div>
+              <div class="input-group col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <span class="input-group-addon">Peso P3</span>
+                <input type="text"  name="peso2" class="entrada-form"  aria-describedby="sizing-addon1">
+              </div>
+            </div><!--Linha 3-->
+          </form>
+          <button class="text-center" id="resultado">Resultado</button>
+
+        </div><!-- Fim Jumbotron -->
+      </div> <!-- Fim do container-->
+    </div> <!-- Fim da faixa -->
+          
+  </header>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

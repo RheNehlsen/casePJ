@@ -1,0 +1,78 @@
+body{
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+
+/* Header */
+
+.faixa{
+	background-color: #2a456e;
+	width: 100%;
+	height: 100px;
+}
+
+.container{
+	padding: 20px;
+}
+
+.jumbotron{
+	height: 1000px;
+}
+
+.logo{
+	margin-top: -10px;
+}
+
+#formulario{
+  margin-top: 15px; 
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+
+
+.input-group-addon:first-child {
+  border-radius: 0 !important;
+  border: 0px solid !important;
+  background-color: #2a456e;
+  width: 100px;
+  height: 40px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 17px;
+  color: #fff;
+
+}
+
+.entrada-form{
+	width:70%;
+	height: 40px;
+	float: left;
+
+}
+
+#m-pretendida{
+	width: 65%; 
+}
+
+#resultado{
+	margin-top: 40px;
+	margin-left: -60px;
+	width: 60%;
+	height: 50px;
+	font-size: 2em;
+	border-radius: 5px;
+	color: #fff;
+	background-color: #2a456e;
+
+}
+
+
+@media max-width(600px){
+	#resultado{
+		font-size: 1.2em;
+	}
+}

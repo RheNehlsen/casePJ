@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tá Coxa! | Calculadora de notas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+          <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>   
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Individual.html">
+                <span class="glyphicon glyphicon-edit"></span><br class="hidden-xs"> Nota Personalizada</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Sobre</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-piggy-bank"></span><br class="hidden-xs"> Nos ajude</a>
+              </li>     
+          </ul>
+        </div>
+      </div>    
+    </nav>
+  </header>
+  <!-------- HEADER END -------->
+  <div class="container" id="main-content">
+    <div class="jumbotron">
+      <h1 class="text-center col-xs-12">Calculadora de notas de P3</h1>
+      <h2 class="text-center">Veja exemplos de notas</h2>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <form name="materias">
+          <fieldset>
+            <span class="suspenso">Selecione a matéria</span>
+            <select name="subjects" id="first-selection">
+            </select>
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+       <button class="suspenso" id="result-button" onclick="$cm.loadResult()">Ver Resultado</button>
+     </div>
+     <!-- Visível após cálcular a média --> 
+      <div id="notas">
+        
+      </div>
+      <div id="final-result">
+
+      </div>
+
+    </div><!--jumbotron-->
+  </div><!--container-->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="col-xs-12 text-center">O Tá Coxa! te ajuda no desespero de final de semestre, calcule já quanto você precisa na P3 e não passe mais sufoco.</div>
+      <hr>
+      <div class="col-xs-12 text-center" id="copy">&copy; Copyright Poli Júnior</div>
+    </div>
+    
+  </footer>
+
+
+</body>
+</html>

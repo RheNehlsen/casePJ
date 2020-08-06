@@ -1,0 +1,150 @@
+body{
+	margin: 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+/* Header */
+
+#header-nav{
+	background-color: #2a456e;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img {
+	background: url('../img/SiteLogoMenor.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-toggle{
+	margin-top: 30px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #eeee00;
+}
+
+#nav-list{
+	margin-top: 20px;
+}
+
+#nav-list a{
+	color: #fff;
+	text-align: center;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+#nav-list a:hover{
+	background: #708090;
+}
+
+#nav-list a span {
+	font-size: 1.8em;
+
+}
+
+#collapsable-nav a{
+	font-size: 1.2em;
+}
+
+#collapsable-nav a span{
+	font-size: 1em;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+/* HEADER */
+
+/* MAIN PAGE */
+
+.jumbotron{
+	height: 730px;
+}
+
+h2{
+	margin: 20px 0 30px ;
+	font-size: 1.5em;
+}
+
+.suspenso{
+	background-color: #2a456e;
+	width: 90%;
+	height: 50px;
+	border-radius: 3px;
+	font-size: 1.5em;
+	color : #fff;
+	padding: 10px;
+	margin-right: -2px;
+}
+
+#first-selection{
+	width: 30%;
+	height: 40px;
+	padding: -3px;
+	margin-left: 15px;
+	margin-right:15px; 
+	font-size: 1.2em;
+	border: 0.5px solid;
+}
+
+#result-button{
+	width: 30%;
+	margin: 20px;
+	padding: 5px;
+}
+
+.notas{
+	margin-top: 30px;
+	background-color: #2a456e;
+	border-radius: 5px;
+	padding: 10px 3px; 
+	height: 90px;
+	width: 100%;
+	font-size: 1.4em;
+	color: #fff;
+}
+
+.numNota{
+	margin-bottom:-5px;
+
+}
+
+/* MAIN PAGE */
+
+/*FOOTER*/
+
+.panel-footer{
+	background-color: #2a456e;
+	color: #fff;
+	font-family: Comic Sans Ms;
+}
+hr{
+	width: 65%;
+	margin-top: 10px;
+}
+
+#copy{
+	margin-top: 5px;
+}
+
+
+@media (max-width: 767px){
+	/* HEADER */
+	#logo-img {
+		background: url('../img/SiteLogoMenorAinda.png') no-repeat;
+		height: 70px;
+		width: 70px;
+		margin: 5px 10px 5px 15px;
+	}
+	/* MAIN PAGE */
+	.jumbotron{
+		height: 1200px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.jumbotron{
+		height: 1000px;
+	}
+}
