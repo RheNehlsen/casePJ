@@ -1,4 +1,4 @@
-
+//duplicando código para me organizar melhor
 $(function(){
 
 	var finalResult = '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><div id="notaP3" style="color:{{cor}}">{{texto}}</div></div>';
