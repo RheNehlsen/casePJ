@@ -54,7 +54,7 @@ body{
 
 }
 
-#m-pretendida{
+#media-pretendida{
 	width: 65%; 
 }
 
@@ -70,6 +70,10 @@ body{
 
 }
 
+#notaP3{
+	font-size: 2em;
+	margin-top: 50px;
+}
 
 @media max-width(600px){
 	#resultado{

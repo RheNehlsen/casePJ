@@ -19,7 +19,7 @@ var cm = {}; //namespace
 var menuSelector = "snippets/selection_snippet.html";
 var nota_json = "https://api.polijunior.com.br/notas";
 var notasHtml = "snippets/notas_snippet.html";
-var finalResult = "snippets/result-snippet.html";
+var finalResult = '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><div id="notaP3" style="color:{{cor}}">{{texto}}</div></div>';
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -96,20 +96,18 @@ function buildSingleNota(notasHtml,notas, id){ //monta o snippet de notas dado u
   var objctValues = Object.values(subject);
   for (var i=2; i<8; i++)
     finalHtml = insertProperty(finalHtml,objctProprieties[i],objctValues[i]);
+  var text = loadResultMessage(objctValues[2],objctValues[3],objctValues[4],objctValues[5],objctValues[6],objctValues[7]);
+  finalHtml+= text;
   return finalHtml;
 };
 
-  /*
-  var notaP1=document.getElementById("nota_p1").value;
-  var pesoP1=document.getElementById("peso_p1").value;
-  var notaP2=document.getElementById("nota_p2").value;
-  var pesoP2=document.getElementById("peso_p1").value;
-  var pesoP3=document.getElementById("peso_p3").value;
-  var media=document.getElementById("media_pretendida").value;
-  var finalMessage = calculaP3(notaP1,pesoP1,notaP2,pesoP2,pesoP3,media);
+function loadResultMessage(notaP1,pesoP1,notaP2,pesoP2,pesoP3,media){
+  var notaP3 = calculaP3(notaP1,pesoP1,notaP2,pesoP2,pesoP3,media);
+  var finalMessage = buildFinalResult(notaP3);
   var text = insertProperty(finalResult,"texto",finalMessage);
-  insertHtml("#final-result",text);
-  */
+  var text = insertProperty(text,"cor",changeColor(notaP3));
+  return text;
+  };
 
 function calculaP3(notaP1,pesoP1,notaP2,pesoP2,pesoP3,mediaFinal){
   return ((mediaFinal*(pesoP3+pesoP2+pesoP1))-((notaP1*pesoP1)+(notaP2*pesoP2)))/pesoP3
@@ -120,16 +118,27 @@ function buildFinalResult(nota){
   if(nota>10){
     text = "Infelizmente você não consiguirá atingir a média desejada.";
   }else if(nota>5 && nota<=10){
-    text="Atenção!! você precisa de " + nota.toString() + " na P3, para atingir a média desejada.";
+    text="Atenção!! Você precisa de " + nota.toFixed(2).toString() + " na P3, para atingir a média desejada.";
   }else if(nota>0 && nota<=5){
-    text="Você só precisa de " + nota.toString() + " na P3, para atingir a média desejada.";
+    text="Você só precisa de " + nota.toFixed(2).toString() + " na P3, para atingir a média desejada.";
   }else{
     text="Parabéns, você já alcançou a média desejada.";
   };
   return text;
 };
 
+function changeColor(nota){
+  if(nota>5){
+    return "red";
+  }else if (nota>0 && nota<=5){
+    return "#0040ff";//azul
+  }else{
+    return "#5af25a";//verde
+  };
+};
+
 global.$cm = cm;
 
 })(window);
+
 

@@ -107,7 +107,12 @@ h2{
 
 .numNota{
 	margin-bottom:-5px;
+}
 
+#notaP3{
+	text-align: center;
+	font-size: 2em;
+	margin-top: 45px;
 }
 
 /* MAIN PAGE */
@@ -142,6 +147,25 @@ hr{
 		height: 1200px;
 	}
 }
+
+@media (max-width: 564px){
+	#result-button{
+		height: 70px;
+		width: 40%;
+	}
+}
+
+@media (max-width: 527px){
+	.jumbotron{
+		height: 1300px;
+	}
+	#first-selection{
+		width: 40%;
+		margin-top: 20px;
+	}
+}
+
+
 
 @media (min-width: 768px) and (max-width: 992px){
 	.jumbotron{
