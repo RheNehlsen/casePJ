@@ -22,6 +22,9 @@ var notasHtml = "snippets/notas_snippet.html";
 var finalResult = '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><div id="notaP3" style="color:{{cor}}">{{texto}}</div></div>';
 
 
+//Algumas funções foram retiradas de um curso de javascript
+
+
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
@@ -110,7 +113,7 @@ function loadResultMessage(notaP1,pesoP1,notaP2,pesoP2,pesoP3,media){
   };
 
 function calculaP3(notaP1,pesoP1,notaP2,pesoP2,pesoP3,mediaFinal){
-  return ((mediaFinal*(pesoP3+pesoP2+pesoP1))-((notaP1*pesoP1)+(notaP2*pesoP2)))/pesoP3
+  return ((mediaFinal*(pesoP3+pesoP2+pesoP1))-((notaP1*pesoP1)+(notaP2*pesoP2)))/pesoP3;
 };
 
 function buildFinalResult(nota){
